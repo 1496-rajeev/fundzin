@@ -45,96 +45,6 @@
 				</div>
 			</header>
 
-			<!--contactformsubmit thank you page-->~
-			<iframe
-				name="hidden_iframe"
-				id="hidden_iframe"
-				style="display: none"
-				onload="if (submitted) {window.location = 'index.html';}"
-			></iframe>
-			<!---->
-
-			<!-- Modal -->
-			<div
-				class="modal fade"
-				id="myModal"
-				tabindex="-1"
-				aria-labelledby="exampleModalLabel"
-				aria-hidden="true"
-			>
-				<div class="modal-dialog">
-					<form
-						action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdav2yXTETyZz-knZmEAeXo7eYdgnS3235vqU7R-DU8QnjDKg/formResponse"
-						method="post"
-						id="cotact-form"
-						target="hidden_iframe"
-						onsubmit="submitted=true;"
-					>
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5
-									class="modal-title"
-									id="exampleModalLabel"
-									style="color: #535fd7"
-								>
-									Contact us Directly
-								</h5>
-								<button
-									type="button"
-									class="btn-close"
-									data-bs-dismiss="modal"
-									aria-label="Close"
-								></button>
-							</div>
-							<p id="cotact-form-status"></p>
-							<div class="modal-body">
-								<div class="mb-3">
-									<label for="clientname" class="form-label"
-										>Name</label
-									>
-									<input
-										type="text"
-										class="form-control"
-										id="clientname"
-										name="entry.991811145"
-										placeholder="name"
-										required
-									/>
-								</div>
-								<div class="mb-3">
-									<label for="clientmail" class="form-label"
-										>Email</label
-									>
-									<input
-										type="email"
-										class="form-control"
-										id="clientmail"
-										name="entry.528818084"
-										placeholder="name@example.com"
-										required
-									/>
-								</div>
-							</div>
-							<div class="modal-footer">
-								<button
-									type="button"
-									class="btn btn-outline-primary"
-									data-bs-dismiss="modal"
-								>
-									Close
-								</button>
-								<input
-									type="submit"
-									class="btn btn-primary"
-									value="Send"
-								/>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-			<!--modal end-->
-
 			<main>
 				<section class="hero">
 					<div class="container">
@@ -151,8 +61,7 @@
 								<div class="hero-cta">
 									<a
 										class="button button-primary"
-										data-bs-toggle="modal"
-										data-bs-target="#myModal"
+										href="/contact.html"
 										>Sign Up Now</a
 									>
 									<div class="lights-toggle">
@@ -503,9 +412,6 @@
 			integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
 			crossorigin="anonymous"
 		></script>
-		<script type="text/javascript">
-			var submitted = false;
-		</script>
 		<script src="dist/js/main.min.js"></script>
 	</body>
 </html>
