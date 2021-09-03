@@ -45,94 +45,83 @@
 		<link href="signin.css" rel="stylesheet" />
 	</head>
 	<body class="text-center">
-		<div class="container features-header text-center">
-			<div class="container-sm">
-				<div class="features-image">
-					<img
-						class="features-illustration asset-dark"
-						src="dist/images/features-illustration-top-dark.svg"
-						alt="Feature illustration top"
-					/>
+		<iframe
+			name="hidden_iframe"
+			id="hidden_iframe"
+			style="display: none"
+			onload="if (submitted) {window.location = 'index.html';}"
+		></iframe>
 
-					<iframe
-						name="hidden_iframe"
-						id="hidden_iframe"
-						style="display: none"
-						onload="if (submitted) {window.location = 'index.html';}"
-					></iframe>
-
-					<main class="form-signin">
-						<form
-							action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdav2yXTETyZz-knZmEAeXo7eYdgnS3235vqU7R-DU8QnjDKg/formResponse"
-							method="post"
-							target="hidden_iframe"
-							onsubmit="submitted=true;"
-						>
-							<!-- <img
+		<main class="form-signin">
+			<form
+				action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdav2yXTETyZz-knZmEAeXo7eYdgnS3235vqU7R-DU8QnjDKg/formResponse"
+				method="post"
+				target="hidden_iframe"
+				onsubmit="submitted=true;"
+			>
+				<!-- <img
 								class="mb-4"
 								src="../assets/brand/bootstrap-logo.svg"
 								alt=""
 								width="72"
 								height="57"
 							/> -->
-							<h1 style="color: blueviolet">Fundzin</h1>
+				<img
+					class="features-illustration asset-dark"
+					src="dist/images/features-illustration-top-dark.svg"
+					alt="Feature illustration top"
+				/>
+				<h1 style="color: blueviolet">Fundzin</h1>
 
-							<div class="form-floating">
-								<input
-									name="entry.991811145"
-									type="text"
-									class="form-control"
-									id="floatingInput"
-									placeholder="name"
-									required
-								/>
-								<label for="floatingInput">Name</label>
-							</div>
-							<div class="form-floating">
-								<input
-									name="entry.528818084"
-									type="email"
-									class="form-control"
-									id="floatingPassword"
-									placeholder="email@example.com"
-									required
-								/>
-								<label for="floatingPassword"
-									>Email address</label
-								>
-							</div>
-
-							<div class="checkbox mb-3">
-								<label>
-									<input
-										type="checkbox"
-										value="remember-me"
-									/>
-									Remember me
-								</label>
-							</div>
-							<button
-								class="w-100 btn btn-lg btn-primary"
-								type="submit"
-							>
-								Next
-							</button>
-							<img
-								style="position: absolute"
-								class="features-illustration asset-light"
-								src="dist/images/features-illustration-light.svg"
-								alt="Feature illustration"
-							/>
-							<p class="mt-5 mb-3 text-muted">
-								Copyright &copy; Fundzin - 2021
-							</p>
-						</form>
-					</main>
+				<div class="form-floating">
+					<input
+						name="entry.991811145"
+						type="text"
+						class="form-control"
+						id="floatingInput"
+						placeholder="name"
+						required
+					/>
+					<label for="floatingInput">Name</label>
 				</div>
-			</div>
-		</div>
+				<div class="form-floating">
+					<input
+						name="entry.528818084"
+						type="email"
+						class="form-control"
+						id="floatingPassword"
+						placeholder="email@example.com"
+						required
+					/>
+					<label for="floatingPassword">Email address</label>
+				</div>
+
+				<div class="checkbox mb-3">
+					<label>
+						<input type="checkbox" value="remember-me" />
+						Remember me
+					</label>
+				</div>
+				<button
+					class="w-100 btn btn-lg btn-primary"
+					type="submit"
+					id="nextBtn"
+				>
+					Next
+				</button>
+				<img
+					class="features-illustration asset-light"
+					src="dist/images/features-illustration-light.svg"
+					alt="Feature illustration"
+				/>
+				<p class="mt-5 mb-3 text-muted">
+					Copyright &copy; Fundzin - 2021
+				</p>
+			</form>
+		</main>
 		<script type="text/javascript">
 			var submitted = false;
 		</script>
+		<script src="./src/js/custom.js"></script>
 	</body>
 </html>
