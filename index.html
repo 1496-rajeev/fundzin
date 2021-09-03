@@ -20,10 +20,11 @@
 		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 	</head>
 
-	<body class="is-boxed has-animations">
+	<body class="is-boxed has-animations" onload="showHidealert()">
 		<div
+			id="success_alert"
 			style="position: fixed; z-index: 999; width: 100%"
-			class="alert alert-success alert-dismissible fade show"
+			class="alert alert-success alert-dismissible fade"
 			role="alert"
 		>
 			<strong>Congrats!</strong> you have been successfully registered to
@@ -139,12 +140,12 @@
 								<div class="hero-media-container">
 									<img
 										class="hero-media-image asset-light"
-										src="src/images/UI .png"
+										src="src/images/ui.svg"
 										alt="Hero media"
 									/>
 									<img
 										class="hero-media-image asset-dark"
-										src="src/images/UI .png"
+										src="src/images/ui.svg"
 										alt="Hero media"
 									/>
 								</div>
@@ -184,7 +185,7 @@
 										/>
 										<img
 											class="features-box asset-dark"
-											src="src/images/UI .png"
+											src="src/images/ui.svg"
 											alt="Feature box"
 										/>
 										<img
@@ -205,7 +206,7 @@
 										/>
 										<img
 											class="features-box asset-light"
-											src="src/images/UI .png"
+											src="src/images/ui.svg"
 											alt="Feature box"
 										/>
 										<img
@@ -319,8 +320,10 @@
 									firsthand.
 								</p>
 								<div class="cta-cta">
-									<a class="button button-primary" href="#"
-										>Buy it now</a
+									<a
+										class="button button-primary"
+										href="/contact.html"
+										>Sign Up Now</a
 									>
 								</div>
 							</div>
@@ -348,9 +351,11 @@
 						</div>
 						<ul class="footer-links list-reset">
 							<li>
-								<a href="#">Contact</a>
+								<a href="https://relogics.in" target="_blank"
+									>Powered by Relogics Studios</a
+								>
 							</li>
-							<li>
+							<!--<li>
 								<a href="#">About us</a>
 							</li>
 							<li>
@@ -358,7 +363,7 @@
 							</li>
 							<li>
 								<a href="#">Support</a>
-							</li>
+							</li>-->
 						</ul>
 						<ul class="footer-social-links list-reset">
 							<li>
@@ -420,7 +425,11 @@
 				</div>
 			</footer>
 		</div>
-
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
